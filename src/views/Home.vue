@@ -7,7 +7,7 @@
     >
     <div v-if="isSiginIn">
       <div class="address">
-        Account: {{ account }}
+        Account: <strong>{{ account }}</strong>
       </div>
       <div class="token">
         Balance: <span v-if="balance"><strong>{{ balance | numberWithCommas }}</strong> KUL</span>
@@ -194,6 +194,8 @@ export default {
   width: 200px;
   height: 50px;
   margin-bottom: 50px;
+  font-weight: 500;
+  font-size: 20px;
 }
 .claim {
   width: 200px;
@@ -216,7 +218,7 @@ export default {
   font-size: 16px;
 }
 .title {
-  font-family: sans-serif;
+  font-family: 'Open Sans';
   color: #2a307a;
   margin-bottom: 0px !important;
 }
